@@ -7109,7 +7109,13 @@ Not Usable By:
  Wizard Slayer~
 @1915 = ~Rod~
 @1916 = ~Rod of Smiting +4~
-@1917 = ~Rods of Smiting are extremely uncommon weapons, though they can be very useful against some foes. This particular rod was last in the possession of a priest of Gond named Debian of Urmlaspyr. Debian was an eccentric adventurer, who took it upon himself to investigate every type of golem that had been reported in the realms. In many cases, the creator of the golem would send his or her creations after Debian for his snooping. Debian usually escaped without much personal harm. Unfortunately for Debian, his luck ran out when he investigated the lair of the Machinery Man, a bizarre lich who happened to be the creator of golems and other animated constructs. The Machinery Man's lab full of iron golems proved to be too much for Debian to overcome.
+@1917 = ~Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3
+~
+@1918 = ~Rods of Smiting are extremely uncommon weapons, though they can be very useful against some foes. This particular rod was last in the possession of a priest of Gond named Debian of Urmlaspyr. Debian was an eccentric adventurer, who took it upon himself to investigate every type of golem that had been reported in the realms. In many cases, the creator of the golem would send his or her creations after Debian for his snooping. Debian usually escaped without much personal harm. Unfortunately for Debian, his luck ran out when he investigated the lair of the Machinery Man, a bizarre lich who happened to be the creator of golems and other animated constructs. The Machinery Man's lab full of iron golems proved to be too much for Debian to overcome.
 
 STATISTICS:
 

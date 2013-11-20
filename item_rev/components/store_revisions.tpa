@@ -1,5 +1,5 @@
 INCLUDE ~item_rev/lib/compatibility.tpa~
-INCLUDE ~item_rev/lib/identify_weapon.tpa~
+INCLUDE ~item_rev/lib/identify_item.tpa~
 INCLUDE ~item_rev/lib/store_rev_macros.tpa~
 
 ///////////////////////////////////////////////////////////////////
