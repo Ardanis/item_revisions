@@ -24,6 +24,7 @@ COPY ~item_rev/itm/dragbane.eff~      ~override~
 COPY ~item_rev/itm/elemdam4.eff~      ~override~
 COPY ~item_rev/itm/giandam4.eff~      ~override~
 COPY ~item_rev/itm/golehit2.eff~      ~override~
+COPY ~item_rev/itm/goledam6.eff~      ~override~
 COPY ~item_rev/itm/goledam8.eff~      ~override~
 COPY ~item_rev/itm/goledie.eff~      ~override~
 COPY ~item_rev/itm/holydam.eff~      ~override~
@@ -31,11 +32,13 @@ COPY ~item_rev/itm/holydam3.eff~      ~override~
 COPY ~item_rev/itm/holydam4.eff~      ~override~
 COPY ~item_rev/itm/holydam6.eff~      ~override~
 COPY ~item_rev/itm/humnhit2.eff~      ~override~
+COPY ~item_rev/itm/humndam6.eff~      ~override~
 COPY ~item_rev/itm/humnbane.eff~      ~override~
 COPY ~item_rev/itm/lycahit2.eff~      ~override~
 COPY ~item_rev/itm/lycadam2.eff~      ~override~
 COPY ~item_rev/itm/lycadam4.eff~      ~override~
 COPY ~item_rev/itm/monshit2.eff~      ~override~
+COPY ~item_rev/itm/monsdam6.eff~      ~override~
 COPY ~item_rev/itm/monsbane.eff~      ~override~
 COPY ~item_rev/itm/orcdam4.eff~      ~override~
 COPY ~item_rev/itm/outhit2.eff~      ~override~
@@ -48,6 +51,7 @@ COPY ~item_rev/itm/trolhit2.eff~      ~override~
 COPY ~item_rev/itm/troldam2.eff~      ~override~
 COPY ~item_rev/itm/undehit2.eff~      ~override~
 COPY ~item_rev/itm/undedam2.eff~      ~override~
+COPY ~item_rev/itm/undedam6.eff~      ~override~
 COPY ~item_rev/itm/undebane.eff~      ~override~
 COPY ~item_rev/itm/vamphit2.eff~      ~override~
 COPY ~item_rev/itm/vampdam2.eff~      ~override~
@@ -282,7 +286,7 @@ COPY ~item_rev/itm/dvstench.spl~      ~override~
 
 COPY ~item_rev/2da~      ~override~
 COPY ~item_rev/bams~      ~override~
-COPY ~item_rev/ioun stones~      ~override~
+COPY ~item_rev/ioun_stones~      ~override~
 
 /*-----------------1PP Content-------------------*/
 
@@ -293,17 +297,19 @@ COPY ~item_rev/1pp/helmets~      ~override~
 
 COPY ~item_rev/1pp/flaming_swords~      ~override~
 
-COPY ~item_rev/1pp/shields/d1_bg1_buckler_animations~      ~override~
-COPY ~item_rev/1pp/shields/d2_bg1_small_animations~      ~override~
-COPY ~item_rev/1pp/shields/d3_bg1_medium_animations~      ~override~
+COPY ~item_rev/1pp/shields/d1_bg1_buckler~      ~override~
+COPY ~item_rev/1pp/shields/d2_bg1_small~      ~override~
+COPY ~item_rev/1pp/shields/d3_bg1_medium~      ~override~
+COPY ~item_rev/1pp/shields/d4_bg1_large~      ~override~
 
-COPY ~item_rev/1pp/shields/c0_bg2_medium~      ~override~
-COPY ~item_rev/1pp/shields/c1_dragonscale_medium~      ~override~
-COPY ~item_rev/1pp/shields/c2_dragonscale_large~      ~override~
-COPY ~item_rev/1pp/shields/c3_spiky_large~      ~override~
-COPY ~item_rev/1pp/shields/c4_fortress_bg2_large~      ~override~
-COPY ~item_rev/1pp/shields/c5_star_small~      ~override~
-COPY ~item_rev/1pp/shields/c6_polished_large~      ~override~
+COPY ~item_rev/1pp/shields/c0_bg2_small~      ~override~
+COPY ~item_rev/1pp/shields/c1_bg2_medium~      ~override~
+COPY ~item_rev/1pp/shields/c2_bg2_large~      ~override~
+COPY ~item_rev/1pp/shields/c3_bg2_medium2~      ~override~
+COPY ~item_rev/1pp/shields/c4_bg2_buckler~      ~override~
+COPY ~item_rev/1pp/shields/c5_bg2_small2~      ~override~
+COPY ~item_rev/1pp/shields/c6_bg2_large2~      ~override~
+COPY ~item_rev/1pp/shields/c7_bg2_scale~      ~override~
 
 // add c0-c7 creature animations
 ACTION_FOR_EACH set IN ~C0~ ~C5~ BEGIN
@@ -394,11 +400,11 @@ COPY_EXISTING ~uddemon.cre~ ~override~
 
 /*--------------------Amulets--------------------*/
 
-// Necklace of Fireballs
+// Amulet of Health
 COPY ~item_rev/itm/amul01.itm~      ~override/amul01.itm~         
-SAY NAME1 @2319
+SAY NAME1 @1000
 SAY NAME2 @2320
-SAY UNIDENTIFIED_DESC @2321
+SAY UNIDENTIFIED_DESC @1002
 SAY DESC @2322
 
 COPY ~item_rev/itm/amul01.spl~      ~override~
@@ -450,7 +456,7 @@ FOR (READ_SHORT 0x76 "ic"; "ic" > 0x00; "ic" -= 0x01) BEGIN
 END
 BUT_ONLY */
 
-// Silver Amulet
+// Silver Charm
 COPY ~item_rev/itm/amul18.itm~      ~override/amul18.itm~         
 SAY NAME1 @1000
 SAY NAME2 @1010
@@ -3609,6 +3615,13 @@ SAY NAME1 @2375
 
 /*-----------------NPCs custom items-----------------*/
 
+// Korgan's Axe
+COPY ~item_rev/itm/korax01.itm~      ~override~         
+SAY NAME1 @2383
+SAY NAME2 @2383
+WRITE_LONG 0x50 ~-1~
+SAY DESC @2384
+
 // Edwin's Amulet
 COPY ~item_rev/itm/misc89.itm~      ~override/misc89.itm~         
 SAY NAME1 @1780
@@ -4222,12 +4235,78 @@ COPY ~item_rev/itm/ring46b.eff~      ~override~
 
 /*----------------------Rods----------------------*/
 
-// Rod os Smiting +3
+// Rod of Absorption
+COPY ~item_rev/itm/rods01.itm~      ~override/rods01.itm~
+SAY NAME1 @1915
+SAY NAME2 @2387
+SAY UNIDENTIFIED_DESC @1917
+SAY DESC @2388
+
+LAF tooltips INT_VAR
+ $tip(1)=RESOLVE_STR_REF (@4080)
+STR_VAR item=rods01 END
+
+COPY ~item_rev/itm/rods01.spl~      ~override~
+  SAY NAME1 @4080
+
+// Rod of Lordly Might
+COPY ~item_rev/itm/rods02.itm~      ~override/rods02.itm~
+SAY NAME1 @1915
+SAY NAME2 @2389
+SAY UNIDENTIFIED_DESC @1917
+SAY DESC @2390
+
+LAF tooltips INT_VAR
+ $tip(1)=RESOLVE_STR_REF (@4081)
+ $tip(2)=RESOLVE_STR_REF (@4082)
+ $tip(3)=RESOLVE_STR_REF (@4083)
+STR_VAR item=rods02 END
+
+COPY ~item_rev/itm/rods02a.spl~      ~override~ // Paralyze
+  SAY NAME1 @4081
+COPY ~item_rev/itm/rods02b.spl~      ~override~ // Cause Fear
+  SAY NAME1 @4082
+COPY ~item_rev/itm/rods02c.spl~      ~override~ // Life Drain
+  SAY NAME1 @4083
+
+// Rod of Resurrection
+COPY ~item_rev/itm/rods03.itm~      ~override/rods03.itm~
+SAY NAME1 @1915
+SAY NAME2 @2391
+SAY UNIDENTIFIED_DESC @1917
+SAY DESC @2392
+
+LAF tooltips INT_VAR
+ $tip(1)=RESOLVE_STR_REF (@4084)
+STR_VAR item=rods03 END
+
+// Rod of Smiting +4
 COPY ~item_rev/itm/rods04.itm~      ~override/rods04.itm~         
 SAY NAME1 @1915
 SAY NAME2 @1916
 SAY UNIDENTIFIED_DESC @1917
 SAY DESC @1918
+
+// Rod of Terror +3
+COPY ~item_rev/itm/rods05.itm~      ~override/rods05.itm~
+SAY NAME1 @1915
+SAY NAME2 @2393
+SAY UNIDENTIFIED_DESC @1917
+SAY DESC @2394
+
+// Rod of Reversal
+COPY ~item_rev/itm/rods06.itm~      ~override/rods06.itm~
+SAY NAME1 @1915
+SAY NAME2 @2395
+SAY UNIDENTIFIED_DESC @1917
+SAY DESC @2396
+
+LAF tooltips INT_VAR
+ $tip(1)=RESOLVE_STR_REF (@4085)
+STR_VAR item=rods06 END
+
+COPY ~item_rev/itm/rods06.spl~      ~override~
+  SAY NAME1 @4085
 
 /*--------------------Shields--------------------*/
 
@@ -5300,7 +5379,7 @@ SAY UNIDENTIFIED_DESC @1515
 SAY DESC @2106
 
 COPY ~item_rev/itm/dvspdrnk.eff~      ~override/dvspdrnk.eff~  // Spell Drinker ability
-COPY ~item_rev/itm/dvspdrnk.spl~      ~override/dvspdrnk.spl~  // Spell Drinker ability
+COPY ~item_rev/itm/dvspdrnk.spl~      ~override/dvspdrnk.spl~
 
 // Namarra +2
 COPY ~item_rev/itm/sw1h36.itm~      ~override/sw1h36.itm~         
@@ -5809,14 +5888,17 @@ SAY UNIDENTIFIED_DESC @1002
 SAY DESC @2222
 
 // Dak'kon's Zerth Blade +2
-COPY ~item_rev/itm/wa2dak.itm~      ~override~         
+COPY ~item_rev/itm/wa2dak.itm~      ~override~
 SAY NAME1 @1808
 SAY NAME2 @2223
 SAY UNIDENTIFIED_DESC @2123
 SAY DESC @2224
 
+COPY ~item_rev/itm/dvspabsr.eff~      ~override~  // Spell Stealer ability
+COPY ~item_rev/itm/dvspabsr.spl~      ~override~
+
 // Shadow Veil (Vhailor's Helm)
-COPY ~item_rev/itm/wa2helm.itm~      ~override~         
+COPY ~item_rev/itm/wa2helm.itm~      ~override~
 SAY NAME1 @1569
 SAY NAME2 @2225
 SAY UNIDENTIFIED_DESC @1579
@@ -5827,42 +5909,42 @@ LAF tooltips INT_VAR
 STR_VAR item=wa2helm END
 
 // Plate of Balduran +2
-COPY ~item_rev/itm/wa2plat.itm~      ~override~         
+COPY ~item_rev/itm/wa2plat.itm~      ~override~
 SAY NAME1 @1497
 SAY NAME2 @2227
 SAY UNIDENTIFIED_DESC @1499
 SAY DESC @2228
 
 // Mercykiller Ring
-COPY ~item_rev/itm/wa2ring.itm~      ~override~         
+COPY ~item_rev/itm/wa2ring.itm~      ~override~
 SAY NAME1 @1800
 SAY NAME2 @2229
 SAY UNIDENTIFIED_DESC @1802
 SAY DESC @2230
 
 // Robe of Larloch (Vecna)
-COPY ~item_rev/itm/wa2robe.itm~      ~override~         
+COPY ~item_rev/itm/wa2robe.itm~      ~override~
 SAY NAME1 @1390
 SAY NAME2 @2231
 SAY UNIDENTIFIED_DESC @2232
 SAY DESC @2233
 
 // Blade of Sharpness +1
-COPY ~item_rev/itm/wa2s1h.itm~      ~override~         
+COPY ~item_rev/itm/wa2s1h.itm~      ~override~
 SAY NAME1 @1513
 SAY NAME2 @2234
 SAY UNIDENTIFIED_DESC @2235
 SAY DESC @2236
 
 // Mirror Shield +3
-COPY ~item_rev/itm/wa2shiel.itm~      ~override~         
+COPY ~item_rev/itm/wa2shiel.itm~      ~override~
 SAY NAME1 @1501
 SAY NAME2 @2237
 SAY UNIDENTIFIED_DESC @1503
 SAY DESC @2238
 
 // Malakar's Companion +2
-COPY ~item_rev/itm/wawak.itm~      ~override~         
+COPY ~item_rev/itm/wawak.itm~      ~override~
 SAY NAME1 @2127
 SAY NAME2 @2381
 SAY UNIDENTIFIED_DESC @2130
@@ -5959,11 +6041,11 @@ SAY DESC @2260
 
 COPY ~item_rev/itm/wand11.spl~      ~override~
 
-// Wand of Wonder
+// Rod of Wonder
 COPY ~item_rev/itm/wand12.itm~      ~override/wand12.itm~         
-SAY NAME1 @2239
+SAY NAME1 @1915
 SAY NAME2 @2261
-SAY UNIDENTIFIED_DESC @2241
+SAY UNIDENTIFIED_DESC @1917
 SAY DESC @2262
 
 // Wand of Cloudkill
@@ -5974,6 +6056,22 @@ SAY UNIDENTIFIED_DESC @2241
 SAY DESC @2264
 
 COPY ~item_rev/itm/wand13.spl~      ~override~
+
+// Web Sack
+COPY ~item_rev/itm/wand14.itm~      ~override/wand14.itm~         
+SAY NAME1 @2239
+SAY NAME2 @2385
+SAY UNIDENTIFIED_DESC @2241
+SAY DESC @2386
+
+COPY ~item_rev/itm/wand14.spl~      ~override~
+
+// Wand of the Apprenti
+COPY ~item_rev/itm/wand15.itm~      ~override/wand15.itm~         
+SAY NAME1 @2239
+SAY NAME2 @2397
+SAY UNIDENTIFIED_DESC @2241
+SAY DESC @2398
 
 // Wand of Spell Striking
 COPY ~item_rev/itm/wand18.itm~      ~override/wand18.itm~         
