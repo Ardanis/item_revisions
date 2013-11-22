@@ -596,6 +596,20 @@ STATISTICS:~
 // catch ~Beastmaster~ or ~Beast Master~
 @100418 = ~[Bb]east[ %tab%]*[Mm]aster~
 
+//////////////////
+//  Shield Bash //
+//////////////////
+
+// 
+@100419 = ~
+Shield Bash Damage:  1D%size%%bon%
+Weight:~
+
+// 
+@100420 = ~Shield Bash~
+
+// 
+@100421 = ~Unaffected By Weapon.~
 
 
 
@@ -606,10 +620,10 @@ STATISTICS:~
 
 /*
 // 
-@100419 = ~~
+@100422 = ~~
 
 // 
-@100420 = ~~
+@100423 = ~~
 */
 
 

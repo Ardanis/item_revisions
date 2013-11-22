@@ -581,6 +581,17 @@ REQUIRE_PREDICATE (ENGINE_IS ~tob~) @9002
 INCLUDE ~item_rev/components/critical_hits.tpa~
 
 
+///////////////////////////////////////////////////////////////////////////
+// Shields Can Bash                                                      //
+///////////////////////////////////////////////////////////////////////////
+
+BEGIN @49
+DESIGNATED 1300
+REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee~) @9002
+
+INCLUDE ~item_rev/components/shield_bash.tpa~
+
+
 
 
 

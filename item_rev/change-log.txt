@@ -221,7 +221,6 @@ v3 Beta 1.14 (21 October 2012)
 
 - Text updates:
     "item_descriptions.tra":
-
       @1659 - name changed/fixed into "Skin of the Forest +3"
       @1660 - added "Note: Barkskin effect is not cumulative with other similar magic."
       @2144 - changed Equalizer usability flags from
@@ -260,14 +259,16 @@ v3 Beta 1.17 (insert date)
 
 - Text updates:
     "setup.tra":
-
       @10 - changed from "Movement Speed Penalties" to "With Movement Speed Penalties"
       @29 - changed from "Revised Armor Bonuses" to "Revised Armor"
-      added @46, @47, @48
+      added @46, @47, @48, 49
 
     "item_descriptions.tra":
       @1859 - changed "Magic Resistance: +5% bonus" to "Saving Throws: +1 bonus"
       @2252 - changed "up to six" to "up to three"
+      
+    "description_updates.tra":
+      added @100419, @100420, @100421
 
 
 

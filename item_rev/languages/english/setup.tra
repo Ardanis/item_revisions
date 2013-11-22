@@ -72,10 +72,12 @@
 @47   = ~Revised Critical Hit Aversion~
 @48   = ~Critical Hit Averted~
 
+@49   = ~Shields Can Bash~
+
 ///////
 
 // the next free value
-@49   = ~Critical Hit Averted~
+@50   = ~~
 
 ///////
 
