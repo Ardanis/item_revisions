@@ -49,6 +49,18 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   
   ~ohshld50~ => 1 // Buckler +2
   ~ohshld51~ => 1 // Buckler +3
+  ~IZOBU~    => 1 // Living Buckler
+  ~MYTH006~  => 1 // Defender of Faldis
+  ~R#ASSHLD~ => 1 // Shield of the Lords +4
+  ~RODLUNAR~ => 1 // Lunar Buckler +1
+  ~RR#BUC11~ => 1 // Blazing Glory
+  ~RR#RWAR2~ => 1 // Rogue's Ward +3
+  ~SHLD01P~  => 1 // Buckler +2
+  ~SHLD08A~  => 1 // Buckler
+  ~SHLD09A~  => 1 // Buckler
+  ~SHLD10A~  => 1 // Buckler
+  ~SHLD17A~  => 1 // Buckler +1
+  ~SHLD33~   => 1 // Buckley's Buckler (Buckler, bgee)
 
 // small shields
   ~_ishld02~ => 2
@@ -89,6 +101,24 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~slayer1~ => 2   // small shield +2 (small shield)
   ~starshld~ => 2
   ~waukeen~ => 2   // waukeen's defender (small shield)
+  
+  ~BGSX11~   => 2 // Gerhardt's Shield
+  ~CMSHLD03~ => 2 // Small Shield +5 "Divinity"
+  ~CMSHQ01~  => 2 // Shield of Fire +2
+  ~D1REFSHD~ => 2 // Reflection Shield +3
+  ~D2#RUN15~ => 2 // Exile
+  ~D2#SET06~ => 2 // Griswold's Honor
+  ~D2#SHIE4~ => 2 // Homunculus
+  ~DEPO62~   => 2 // Blessing of Mystra
+  ~MGVSHLD2~ => 2 // Shield of Fortitude
+  ~SHLD01A~  => 2 // Small Shield
+  ~SHLD02A~  => 2 // Small Shield +1
+  ~SHLD11A~  => 2 // Small Shield
+  ~SHLD12A~  => 2 // Small Shield
+  ~SHLD24A~  => 2 // Polished Shield +1
+  ~SHLD28A~  => 2 // Small Shield +2
+  ~SOAITM25~ => 2 // Talos Storm Shield
+  ~X#FAI3~   => 2 // Dented Shield
 
 // medium shields
   ~_ishld03~ => 3
@@ -153,6 +183,53 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~ohbshld1~ => 3 // Kazrah's Shield +4
   ~ohnshld1~ => 3 // Shield of Fyrus Khal +2
 
+  ~ACCSHLD~  => 3 // Holy Shield of Tempus
+  ~AGSHLD01~ => 3 // Knight's Shield +1
+  ~AGSHLD02~ => 3 // Mirrored Shield +1
+  ~BG1AJA~   => 3 // Ilvastarr Family Shield
+  ~C#AJSHL2~ => 3 // Ilvastarr Family Shield +2
+  ~C#AJSHLD~ => 3 // Ilvastarr Family Shield +1
+  ~CMSHLD04~ => 3 // Shield of Balduran
+  ~D1SHLD02~ => 3 // Sundered Shield of Tiernon
+  ~D1SHLD03~ => 3 // Reflection Shield +3
+  ~D2#SHIE2~ => 3 // Lidless Wall
+  ~DEPO103~  => 3 // Shield of Mitra
+  ~DEPO104~  => 3 // Defender of the Crown
+  ~DEPO107~  => 3 // Runic Iron Parma
+  ~DEPO135~  => 3 // Enchanted Gingerbread Shield
+  ~DEPO163~  => 3 // Stormshield
+  ~DEPO195~  => 3 // Harmonic Shield
+  ~DEPO64~   => 3 // Horned Battleknight Shield
+  ~DEPO71~   => 3 // Amethyst Aegis
+  ~DEPO73~   => 3 // Hylian Mirror Shield
+  ~DEPO87~   => 3 // Crusader Shield
+  ~ESLISH0~  => 3 // Medium Shield +2: Magebane
+  ~IIBWLSH1~ => 3 // Darklight Shield
+  ~I1SH001~  => 3 // Bouncing Shield +1
+  ~MGVSHLD1~ => 3 // Featherweight Shield
+  ~MYTH004~  => 3 // Wraithmeal Shield
+  ~NEWSS03~  => 3 // Shield of Hiding +4
+  ~PSMADE24~ => 3 // Shield of Force +3
+  ~PSMADE25~ => 3 // Mirror Shield +2
+  ~RR#GUARB~ => 3 // The Guardian +2
+  ~RR#GUARC~ => 3 // The Guardian +3
+  ~S#SHLD01~ => 3 // Enhanced Shield of Balduran
+  ~SHLD03A~  => 3 // Medium Shield
+  ~SHLD03P~  => 3 // High Quality Medium Shield
+  ~SHLD04A~  => 3 // Medium Shield +1
+  ~SHLD04P~  => 3 // Medium Shield
+  ~SHLD05P~  => 3 // Corvyr's Blessing
+  ~SHLD06P~  => 3 // Redshield +1, +4 vs. Monstrous
+  ~SHLD08P~  => 3 // Tarloc's Contingency +1
+  ~SHLD09P~  => 3 // Shield of Devotion +1
+  ~SHLD13A~  => 3 // Medium Shield
+  ~SHLD14A~  => 3 // Medium Shield
+  ~SHLD26A~  => 3 // Font of Virtue +2
+  ~SHLD27A~  => 3 // Tahcaluss +3
+  ~SHLD29A~  => 3 // Medium Shield +2
+  ~SOAITM24~ => 3 // Blue Kite Shield
+  ~WQXSH1~   => 3 // Golem's Heart
+  
 // large/tower shields
   ~_shld05~ => 4
   ~_shld06~ => 4
@@ -211,6 +288,35 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~tzshld01~ => 4
   ~ushld3b~ => 4   // storming shield +3 (tower shield)
   ~x#fash01~ => 4
+  
+  ~CMSHLD05~ => 4 // Durlag's Shield +2
+  ~CMSHQ02~  => 4 // Shield of Lathander
+  ~D1SHLD01~ => 4 // The Argent Shield
+  ~D2#RUN18~ => 4 // Spirit
+  ~D2#SHIE1~ => 4 // Stormshield
+  ~D2#SHIE3~ => 4 // Herald Of Zakarum
+  ~DARSHLD~  => 4 // Large Shield +3
+  ~DEPO1~    => 4 // Griffin Battle Shield
+  ~DEPO164~  => 4 // Head Hunter's Glory
+  ~DEPO165~  => 4 // Gerke's Sanctuary
+  ~DEPO173~  => 4 // Dragon Kite Shield
+  ~DEPO218~  => 4 // Ogre Shield
+  ~DEPO224~  => 4 // Randuin's Omen
+  ~DEPO7~    => 4 // Jousting Shield
+  ~PSMADE23~ => 4 // Large Shield +2
+  ~PSSHLD01~ => 4 // Rift Shield +5
+  ~RBSHLD2~  => 4 // Nym's Rhino Beetle Shield
+  ~SHLD02P~  => 4 // High Quality Large Shield
+  ~SHLD05A~  => 4 // Large Shield
+  ~SHLD06A~  => 4 // Large Shield +1
+  ~SHLD07A~  => 4 // Large Shield +1, +4 vs. Missiles
+  ~SHLD07P~  => 4 // Sartessa's Vengeance +1
+  ~SHLD15A~  => 4 // Large Shield
+  ~SHLD16A~  => 4 // Large Shield
+  ~SHLD19A~  => 4 // Large Shield +2
+  ~SHLD23A~  => 4 // Wall of the North +2
+  ~SHLD30A~  => 4 // Large Shield +2
+  ~SHLD31A~  => 4 // Gorm's Arm +3
 END
 
 
