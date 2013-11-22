@@ -385,6 +385,7 @@ INCLUDE ~item_rev/components/items_of_protection.tpa~
 
 BEGIN @16
 DESIGNATED 13
+DEPRECATED ~~
 REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @9002
 
 INCLUDE ~item_rev/components/halberds.tpa~

@@ -9,6 +9,13 @@ INCLUDE ~item_rev/lib/weapon_changes_main.tpa~
 OUTER_SPRINT debug_file ~item_rev/debug/weapon_debug.log~
 
 /////////////////////////////////////////////////////
+//  Halberds can slash too
+
+ACTION_IF halberds_can_slash_too = 1 BEGIN
+  INCLUDE ~item_rev/components/halberds.tpa~
+END
+
+/////////////////////////////////////////////////////
 //  Read tables
 
 OUTER_SPRINT old_weapon_table ~item_rev/lib/bg2_weapon_stats.txt~
