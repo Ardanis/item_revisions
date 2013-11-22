@@ -6099,7 +6099,7 @@ SAY DESC @2138
 LAF tooltips INT_VAR
  $tip(1)=RESOLVE_STR_REF (@2137)
  $tip(2)=RESOLVE_STR_REF (@4068)
- $tip(2)=RESOLVE_STR_REF (@4069)
+ $tip(3)=RESOLVE_STR_REF (@4069)
 STR_VAR item=sw1h51 END
 
 // Water's Edge +3

@@ -6727,7 +6727,7 @@ STATISTICS:
 
 Equipped Abilities:
  Immunity to backstab
- Magic Resistance: +5% bonus
+ Saving Throws: +1 bonus
 
 Armor Class: -3
 Weight: 60
@@ -10542,7 +10542,7 @@ Usable By:
  Bard
  Mage~
 @2251 = ~Wand of Lightning~
-@2252 = ~A Wand of Lightning causes bolts of electrical energy to be discharged from its tip to strike at specified opponents. The possessor of the wand can discharge three bolts of lightning, and may target up to six different enemies. Each bolt does 3D6 points of electrical damage, with a save vs. wand at -3 penalty for half damage. Like all wands, the Wand of Lightning has a limited number of uses. Once these have been expended, the wand is reduced to little more than a chunk of scarred and twisted metal.
+@2252 = ~A Wand of Lightning causes bolts of electrical energy to be discharged from its tip to strike at specified opponents. The possessor of the wand can discharge three bolts of lightning, and may target up to three different enemies. Each bolt does 3D6 points of electrical damage, with a save vs. wand at -3 penalty for half damage. Like all wands, the Wand of Lightning has a limited number of uses. Once these have been expended, the wand is reduced to little more than a chunk of scarred and twisted metal.
 
 STATISTICS:
 

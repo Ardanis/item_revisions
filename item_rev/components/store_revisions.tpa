@@ -9315,10 +9315,10 @@ COPY_EXISTING wmart1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     WAWAK     // Kachiko's Wakizashi +3
     WAFLAIL   // Defender of Easthaven +2
 
-  ADD_STORE_ITEM WA2AMU   LAST #1 #0 #0 IDENTIFIED #0   // Sensate Amulet
-  ADD_STORE_ITEM WA2HARP  LAST #1 #0 #0 IDENTIFIED #3   // Harp of Pandemonium
-  ADD_STORE_ITEM WA2HALB  LAST #1 #0 #0 IDENTIFIED #0   // Harmonium Halberd
-  ADD_STORE_ITEM WA2RING  LAST #1 #0 #0 IDENTIFIED #0   // Mercykiller Ring
+  ADD_STORE_ITEM WA2AMU   LAST #1 #0 #0 IDENTIFIED #1   // Sensate Amulet
+  ADD_STORE_ITEM WA2HARP  LAST #3 #0 #0 IDENTIFIED #1   // Harp of Pandemonium
+  ADD_STORE_ITEM WA2HALB  LAST #1 #0 #0 IDENTIFIED #1   // Harmonium Halberd
+  ADD_STORE_ITEM WA2RING  LAST #1 #0 #0 IDENTIFIED #1   // Mercykiller Ring
 
 END BUT_ONLY
 
