@@ -612,15 +612,17 @@ Weight:~
 @100421 = ~Unaffected By Weapon.~
 
 
+/////////////////////////////////////
+//  Revised Critical Hit Aversion  //
+/////////////////////////////////////
 
-
+// remove ~Protects Against Critical Hits~ from the description
+@100422 = ~[%LNL%%MNL%%WNL%]\(Special:[ %TAB%]+\)?Protects[ %TAB%]+[Aa]gainst[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
 
 
 
 
 /*
-// 
-@100422 = ~~
 
 // 
 @100423 = ~~

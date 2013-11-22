@@ -2,6 +2,7 @@ INCLUDE ~item_rev/lib/descriptions.tpa~
 INCLUDE ~item_rev/lib/shield_list.tpa~
 INCLUDE ~item_rev/lib/macros.tpa~
 INCLUDE ~item_rev/lib/tooltip_macro.tpa~
+INCLUDE ~item_rev/ds/ds.tph~
 
 OUTER_SET sb = RESOLVE_STR_REF ( @100420 )
 OUTER_SET wi = RESOLVE_STR_REF ( @100421 ) // would have been ~Weapon Ineffective.~, but alas...
@@ -30,9 +31,8 @@ ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
 OUTER_SET detectable_shield_bash = 1
 OUTER_SET detectable_opcode = 318
 
-INCLUDE ~ds/ds.tph~
 LAM ds_sort_stats_ids
-LAF resolve_stat INT_VAR STR_VAR id=~AG#_SHIELD_BASH_ENCHANTMENT~ RET stat_ind=stat_ind END
+LAF ds_resolve_stat INT_VAR STR_VAR id=~AG#_SHIELD_BASH_ENCHANTMENT~ RET stat_ind=stat_ind END
 
 DEFINE_PATCH_FUNCTION add_detection BEGIN
   ex=0

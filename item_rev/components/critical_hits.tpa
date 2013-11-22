@@ -1,3 +1,16 @@
+INCLUDE ~item_rev/lib/descriptions.tpa~
+
+//////////////////////////////////////////////
+//  descriptions
+
+DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
+  SPRINT t1 @100422
+  REPLACE_TEXTUALLY ~%t1%~ ~~
+END
+
+
+//////////////////////////////////////////////
+//  patching
 
 OUTER_SET tobex=0
 ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
@@ -13,11 +26,15 @@ ACTION_IF tobex BEGIN
     READ_SHORT 0x1c item
     READ_ASCII 0x22 anim (2)
     PATCH_IF item=7 BEGIN
-     READ_BYTE 0x18 flags
+      READ_BYTE 0x18 flags
       PATCH_IF ( (flags & 4) = 4 ) && (~%anim%~ STRING_MATCHES_REGEXP ~ +~ = 0) BEGIN // movable and no animation
         WRITE_BYTE 0x1b THIS | 2
+        
+        SPRINT text_update revised_crit_aversion
+        LPM update_item_descriptions
       END
     END
+    
   END BUT_ONLY
 END ELSE BEGIN
   FAIL ~This component requires ToBEx installed~

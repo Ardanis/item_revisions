@@ -268,7 +268,7 @@ v3 Beta 1.17 (insert date)
       @2252 - changed "up to six" to "up to three"
       
     "description_updates.tra":
-      added @100419, @100420, @100421
+      added @100419, @100420, @100421, @100422
 
 
 
