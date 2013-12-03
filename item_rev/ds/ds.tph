@@ -668,6 +668,7 @@ ACTION_IF fubar BEGIN
     WRITE_SHORT 0x6e 0
     WRITE_SHORT 0x70 0
     
+  COPY_EXISTING ~spwi705.spl~ override
     LPF ~ADD_SPELL_HEADER~
       INT_VAR type=2 location=2 target=1 range=20 required_level=1 speed=7 projectile=211
       STR_VAR icon=~SPWI705B~
