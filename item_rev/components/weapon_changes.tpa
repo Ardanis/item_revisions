@@ -197,7 +197,7 @@ DEFINE_PATCH_MACRO special BEGIN
   END
 
   // change damage type to "slashing"
-  PATCH_IF wakizashi BEGIN
+  PATCH_IF wakizashi || short_sword BEGIN
     WRITE_SHORT off+0x1c 3  // slashing
     WRITE_SHORT off+0x2c 50 // overhand
     WRITE_SHORT off+0x2e 50 // backhand
@@ -228,6 +228,14 @@ DEFINE_PATCH_MACRO special BEGIN
     END
     PATCH_IF type=2 BEGIN
       WRITE_BYTE off+0x26 THIS|1 // use STR bonus
+      WRITE_SHORT off+0xe 15 // range
+    END
+  END
+
+  // change range of throwing weapons
+  PATCH_IF dart || dagger || handaxe || hammer BEGIN // spears are handled one block above
+    PATCH_IF type=2 BEGIN // ranged
+      WRITE_SHORT off+0xe 15 // range
     END
   END
   
@@ -779,6 +787,13 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
       LPM update_item_descriptions
     END
 
+    short_sword
+    // change damage type to slashing
+    BEGIN
+      SPRINT text_update wc_pierce_to_slash
+      LPM update_item_descriptions
+    END
+
     katana
     // change proficiency to "katana/wakizashi"
     BEGIN
@@ -826,6 +841,21 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
         END
       END
     END
+    
+    light_xbow
+    // add reload time to crossbows, duration = 1 second
+    BEGIN
+      LPF ADD_ITEM_EFFECT INT_VAR opcode=176 target=1 duration=1 parameter1=0 parameter2=1 type=2 END // type 2 = ranged, no ammo required
+      LPF ADD_ITEM_EFFECT INT_VAR opcode=176 target=1 duration=1 parameter1=0 parameter2=1 type=4 END // type 4 = ranged, requires ammo
+    END
+    
+    heavy_xbow
+    // add reload time to crossbows, duration = 2 seconds
+    BEGIN
+      LPF ADD_ITEM_EFFECT INT_VAR opcode=176 target=1 duration=2 parameter1=0 parameter2=1 type=2 END
+      LPF ADD_ITEM_EFFECT INT_VAR opcode=176 target=1 duration=2 parameter1=0 parameter2=1 type=4 END
+    END
+    
 
     // if ammo's prof is 0 (none), then archer suffers no thaco penalty even without any points in launcher's proficiency
 
